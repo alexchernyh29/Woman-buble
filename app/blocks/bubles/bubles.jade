@@ -1,0 +1,40 @@
+mixin bubles()
+    +b('section').bubles
+        +e.img.one
+            img(src='/images/buble-1.png')
+        +e.img.two
+            img(src='/images/buble-2.png')
+        +e.img.three
+            img(src='/images/buble-3.png')
+        +e.img.four
+            img(src='/images/buble-4.png')
+        +e.img.five
+            img(src='/images/buble-5.png')
+        +e.img.six
+            img(src='/images/buble-midle.png')
+        +e.wrap
+            +e(data-id="1").buble.blue
+                +e('p').buble__title Миф №1
+                +e('p').buble__text <span>Краска<br></span>не перекроет<br>седину
+            +e(data-id="2").buble.pink
+                +e('p').buble__title Миф №2
+                +e('p').buble__text СУХИЕ<br><span>ВОЛОСЫ</span>
+            +e(data-id="3").buble.blue
+                +e('p').buble__title Миф №3
+                +e('p').buble__text Повреждения<span><br>по всей длине</span>
+            +e(data-id="4").buble.pink
+                +e('p').buble__title Миф №4
+                +e('p').buble__text Тусклый<br>цвет
+        +e.wrap
+            +e(data-id="5").buble.blue
+                +e.buble__title Миф №5
+                +e.buble__text отсутствие<br>блеска
+            +e(data-id="6").buble.pink
+                +e.buble__title Миф №6
+                +e.buble__text <span>Волосы<br></span>как солома
+            +e(data-id="7").buble.blue
+                +e.buble__title Миф №7
+                +e.buble__text <span>Окрашивание</span><br>вредит волосам
+            +e(data-id="8").buble.pink
+                +e.buble__title Миф №8
+                +e.buble__text Постоянные<br>окрашивания
