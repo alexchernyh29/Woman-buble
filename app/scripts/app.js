@@ -37,7 +37,10 @@ $(() => {
 
 	$(".bubles__buble").click(function () {
 		const mythId = parseInt($(this).data("id"));
-		if (selectedMyths.length < 2) {
+		if ($(this).hasClass("selected")) {
+			$(this).removeClass("selected");
+			selectedMyths = selectedMyths.filter((id) => id !== mythId);
+		} else if (selectedMyths.length < 2) {
 			$(this).addClass("selected");
 			selectedMyths.push(mythId);
 		}
