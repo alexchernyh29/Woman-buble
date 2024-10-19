@@ -49,7 +49,6 @@
         display flex
         flex-direction column
         justify-content center
-        opacity 0.83
         transition-duration 1.5s
         &:hover
             transform scale(1.1)
@@ -92,12 +91,14 @@
             line-height wm(35)
 
 .pink {
-    box-shadow inset 47px -26px 47.8px 1px rgb(236, 221, 218),inset 17px -14px 17.1px -4px rgb(251, 244, 241);
-    background rgb(250, 248, 249)
+    background-image url('/images/pink.png')
+    background-size cover
+    background-repeat no-repeat
 }
 .blue {
-    box-shadow inset 35px -39px 47.8px 4px rgb(124, 209, 220),inset 4px -25px 43px 0px rgb(255, 255, 255)
-    background rgb(250, 248, 249)
+    background-image url('/images/blue.png')
+    background-size cover
+    background-repeat no-repeat
 }
 .selected {
     box-shadow: inset 47px -26px 47.8px 1px rgb(175, 255, 118),inset 17px -14px 17.1px -4px rgb(161, 178, 149);

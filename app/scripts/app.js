@@ -40,11 +40,11 @@ $(() => {
 		if ($(this).hasClass("selected")) {
 			$(this).removeClass("selected");
 			selectedMyths = selectedMyths.filter((id) => id !== mythId);
-		} else if (selectedMyths.length < 2) {
+		} else if (selectedMyths.length < 4) {
 			$(this).addClass("selected");
 			selectedMyths.push(mythId);
 		}
-		if (selectedMyths.length === 2) {
+		if (selectedMyths.length === 4) {
 			redirect();
 		}
 	});
